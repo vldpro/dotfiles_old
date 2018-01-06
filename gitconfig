@@ -1,0 +1,14 @@
+[user]
+	email = vladimir.provalov@emlid.com
+	name = Vladimir ProvaLove
+[core]
+	editor = vim
+
+[alias]
+    please = push --force-with-lease
+	st = status --short
+	co = checkout
+	ci = commit -v
+	br = branch
+	lg = log --graph --abbrev-commit --pretty=short   
+	undo = reset --soft $(git log --format=%H -2 | tail -1)
