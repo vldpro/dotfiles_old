@@ -1,0 +1,37 @@
+---
+Language: Cpp
+IndentWidth: 4
+
+AlignAfterOpenBracket: BAS_Align
+AlignConsecutiveAssignments: true
+AlignOperands: true
+AlignTrailingComments: true
+AllowShortBlocksOnSingleLine: false
+AllowShortFunctionsOnSingleLine: SFS_None 
+AllowShortIfStatementOnSingleLine: SFS_Inline
+AllowShortLoopsOnSingleLine: false 
+AlwaysBreakBeforeMultilineStrings: false
+BinPackArguments: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+	AfterEnum: false
+	AfterStruct: false
+	AfterUnion: false
+	BeforeElse: false
+	BeforeCatch: false
+	AfterClass: false
+	AfterFunction: true
+	AfterNamespace: false
+	AfterControlStatement: false
+
+BreakBeforeInheritanceComma: false
+BreakBeforeTernaryOperator: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+
+IncludeBlocks: IBS_Regroup
+IndentCaseLabels: true
+IndentPPDirectives: PPDIS_AfterHash
+IndentWrappedFunctionNames: true
+MaxEmptyLinesToKeep: 2
+---
