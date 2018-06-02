@@ -7,10 +7,15 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="theunraveler"
+ZSH_THEME="avit"
 
 plugins=(
   git
+  docker
+  python
+  sudo
+  tmux
+  web-search
   bundler
   dotenv
   osx
@@ -93,8 +98,10 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if test -z ${TMUX}; then
-    exec tmux
-fi
 
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/vldpro/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/vldpro/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/vldpro/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/vldpro/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
