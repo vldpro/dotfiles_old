@@ -23,17 +23,15 @@ plugins=(
 
 
 # User configuration
+if which vim >/dev/null 2>&1 ; then 
+    export EDITOR='vim'
+else
+    echo 'Could not set editor. Vim is not installed.' >&2
+fi
 
 # Docker autocomplition
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
-
-
-if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR='vim'
-else
-	export EDITOR='mvim'
-fi
 
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
