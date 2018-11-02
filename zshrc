@@ -19,6 +19,7 @@ plugins=(
   zsh-syntax-highlighting
   colored-man-pages
   battery
+  tmux
 )
 
 
